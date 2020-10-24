@@ -6,11 +6,11 @@ import { PersonasComponent } from './personas/personas.component';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'Goal',
+        redirectTo: 'Goals',
         pathMatch: 'full'
     },
     {
-        path: 'Goal',
+        path: 'Goals',
         component: GoalComponent
     },
     {
