@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GoalComponent } from './goal/goal.component';
+import { PersonasComponent } from './personas/personas.component';
 
 const routes: Routes = [
     {
@@ -14,7 +15,7 @@ const routes: Routes = [
     },
     {
         path: 'Personas',
-        component: GoalComponent
+        component: PersonasComponent
     },
     {
         path: 'Design',
