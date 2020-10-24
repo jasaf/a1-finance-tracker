@@ -1,30 +1,31 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { GoalComponent } from './goal/goal.component';
 
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'goal',
+        component: GoalComponent,
         pathMatch: 'full'
     },
     {
         path: 'personas',
-        redirectTo: 'goal',
+        redirectTo: '',
         pathMatch: 'full'
     },
     {
         path: 'design',
-        redirectTo: 'goal',
+        redirectTo: '',
         pathMatch: 'full'
     },
     {
         path: 'critique',
-        redirectTo: 'goal',
+        redirectTo: '',
         pathMatch: 'full'
     },
     {
         path: 'technologies',
-        redirectTo: 'goal',
+        redirectTo: '',
         pathMatch: 'full'
     }
 ];
