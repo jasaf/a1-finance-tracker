@@ -14,27 +14,27 @@ export class AppComponent implements OnInit {
     appPages = [
         {
             title: 'Goal',
-            url: '/',
+            url: '/main/Goal',
             icon: 'star'
         },
         {
             title: 'Personas',
-            url: '/personas',
+            url: '/main/personas',
             icon: 'people'
         },
         {
             title: 'Design',
-            url: '/design',
+            url: '/main/design',
             icon: 'brush'
         },
         {
             title: 'App Critique',
-            url: '/critique',
+            url: '/main/critique',
             icon: 'flame'
         },
         {
             title: 'Technologies',
-            url: '/technologies',
+            url: '/main/technologies',
             icon: 'construct'
         }
     ];

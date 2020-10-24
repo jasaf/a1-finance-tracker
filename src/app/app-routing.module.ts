@@ -1,32 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { GoalComponent } from './goal/goal.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: GoalComponent,
+        redirectTo: 'main',
         pathMatch: 'full'
     },
     {
-        path: 'personas',
-        redirectTo: '',
-        pathMatch: 'full'
-    },
-    {
-        path: 'design',
-        redirectTo: '',
-        pathMatch: 'full'
-    },
-    {
-        path: 'critique',
-        redirectTo: '',
-        pathMatch: 'full'
-    },
-    {
-        path: 'technologies',
-        redirectTo: '',
-        pathMatch: 'full'
+        path: 'main',
+        loadChildren: () => import('./main-content/main-content.module').then( m => m.MainContentModule)
     }
 ];
 
