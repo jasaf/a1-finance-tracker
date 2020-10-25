@@ -1,14 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { DocumentViewerOptions } from '@ionic-native/document-viewer';
+import { DocumentViewer } from '@ionic-native/document-viewer/ngx/';
+
 
 @Component({
-  selector: 'app-introduction',
-  templateUrl: './introduction.component.html',
-  styleUrls: ['./introduction.component.scss'],
+    selector: 'app-introduction',
+    templateUrl: './introduction.component.html',
+    styleUrls: ['./introduction.component.scss'],
 })
 export class IntroductionComponent implements OnInit {
 
-  constructor() { }
+    options: DocumentViewerOptions = {
+        title: 'Commit Log'
+    }
 
-  ngOnInit() {}
+    constructor(private document: DocumentViewer) { }
 
+    ngOnInit() { }
+
+    commitLog() {
+        this.document.viewDocument('../../../assets/commit-log.pdf', 'application/pdf', this.options);
+    }
 }

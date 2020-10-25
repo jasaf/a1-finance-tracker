@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainContentComponent } from './main-content/main-content.component';
 import { MainContentModule } from './main-content/main-content.module';
 import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
+import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
 
 @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
         StatusBar,
         SplashScreen,
         PhotoViewer,
+        DocumentViewer,
         { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
     ],
     bootstrap: [AppComponent]
