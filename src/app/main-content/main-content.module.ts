@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { PersonasComponent } from './personas/personas.component';
 import { DesignComponent } from './design/design.component';
 import { CritiqueComponent } from './critique/critique.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { CritiqueComponent } from './critique/critique.component';
         GoalComponent,
         PersonasComponent,
         DesignComponent,
-        CritiqueComponent
+        CritiqueComponent,
+        TechnologiesComponent
     ]
 })
 export class MainContentModule { }

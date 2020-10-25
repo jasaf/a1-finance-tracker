@@ -4,6 +4,7 @@ import { GoalComponent } from './goal/goal.component';
 import { PersonasComponent } from './personas/personas.component';
 import { DesignComponent } from './design/design.component';
 import { CritiqueComponent } from './critique/critique.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
 
 const routes: Routes = [
     {
@@ -29,7 +30,7 @@ const routes: Routes = [
     },
     {
         path: 'Technologies',
-        component: GoalComponent
+        component: TechnologiesComponent
     }
 ];
 
