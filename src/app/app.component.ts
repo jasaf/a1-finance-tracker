@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         },
         {
             title: 'Technologies',
-            url: '/main/technologies',
+            url: '/main/Technologies',
             icon: 'construct'
         }
     ];
