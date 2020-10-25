@@ -1,3 +1,14 @@
-<p>
-  design works!
-</p>
+<app-header [title]="'Design'"></app-header>
+<ion-content [fullscreen]="true">
+    <ion-card> 
+        <ion-card-header>
+            <ion-card-title>Main Screen</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-thumbnail slot="start" (click)="enlarge()">
+                <ion-img [src]="'https://tinyurl.com/yxd3wgkk'"></ion-img>
+              </ion-thumbnail>
+              <!-- <ion-label>{{item.text}}</ion-label> -->
+        </ion-card-content>
+    </ion-card>
+</ion-content>

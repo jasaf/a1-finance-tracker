@@ -9,6 +9,7 @@ import { MainContentRoutingModule } from './main-content-routing.module';
 import { GoalComponent } from './goal/goal.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonasComponent } from './personas/personas.component';
+import { DesignComponent } from './design/design.component';
 
 @NgModule({
     imports: [
@@ -20,7 +21,8 @@ import { PersonasComponent } from './personas/personas.component';
     declarations: [
         HeaderComponent,
         GoalComponent,
-        PersonasComponent
+        PersonasComponent,
+        DesignComponent
     ]
 })
 export class MainContentModule { }

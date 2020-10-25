@@ -1,0 +1,14 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "a1-finance-tracker",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "linuxAndroidStudioPath": "/home/filip/uni/android-studio-ide-193.6821437-linux/android-studio/bin/studio.sh",
+  "cordova": {}
+}

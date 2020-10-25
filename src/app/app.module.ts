@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainContentComponent } from './main-content/main-content.component';
 import { MainContentModule } from './main-content/main-content.module';
+import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 
 @NgModule({
     declarations: [
@@ -26,6 +27,7 @@ import { MainContentModule } from './main-content/main-content.module';
     providers: [
         StatusBar,
         SplashScreen,
+        PhotoViewer,
         { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
     ],
     bootstrap: [AppComponent]

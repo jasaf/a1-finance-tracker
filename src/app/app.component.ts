@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
         },
         {
             title: 'Design',
-            url: '/main/design',
+            url: '/main/Design',
             icon: 'brush'
         },
         {
