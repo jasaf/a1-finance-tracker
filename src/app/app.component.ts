@@ -60,7 +60,6 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.selectedIndex = this.appPages.findIndex(page => page.url === window.location.pathname);
     }
 
     getIndexTitle() {
