@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { GoalComponent } from './goal/goal.component';
 import { PersonasComponent } from './personas/personas.component';
 import { DesignComponent } from './design/design.component';
+import { CritiqueComponent } from './critique/critique.component';
 
 const routes: Routes = [
     {
@@ -24,7 +25,7 @@ const routes: Routes = [
     },
     {
         path: 'Critique',
-        component: GoalComponent
+        component: CritiqueComponent
     },
     {
         path: 'Technologies',

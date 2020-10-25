@@ -5,10 +5,72 @@
             <ion-card-title>Main Screen</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <ion-thumbnail slot="start" (click)="enlarge()">
-                <ion-img [src]="'https://tinyurl.com/yxd3wgkk'"></ion-img>
-              </ion-thumbnail>
-              <!-- <ion-label>{{item.text}}</ion-label> -->
+            <div class="card-content-img" (click)="enlarge('../../../assets/design/main_screen-pdf.jpg')">
+                <ion-img [src]="'../../../assets/design/main_screen-pdf.jpg'" [size]></ion-img>
+                <span>Tap to open</span>
+            </div>
+            <span>The application needs to be as simple as possible. Therefore, after launching it the first thing users will see is a chart showing their expenses for the current month. Underneath it there will be quick access buttons which will enable the user to add new expense, add new goal or view statistics. Main view will also consist of a small table showing latest transactions, with a “View All” button leading to transaction history search screen. </span>
         </ion-card-content>
     </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Menu</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div class="card-content-img" (click)="enlarge('../../../assets/design/menu.jpg')">
+                <ion-img [src]="'../../../assets/design/menu.jpg'" [size]></ion-img>
+                <span>Tap to open</span>
+            </div>
+            <span>A very simple, standardised menu with options leading to different sections of the application. One of the functionalities of the application is to display undescribed records, thus the menu will display such transactions as a reminder.</span>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Statistics</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div class="card-content-img" (click)="enlarge('../../../assets/design/stats-pdf.jpg')">
+                <ion-img [src]="'../../../assets/design/stats-pdf.jpg'" [size]></ion-img>
+                <span>Tap to open</span>
+            </div>
+            <span>Statistics section will display a simple pie chart showing the expenses for given categories, previously registered by the user. It will also display a more complicated Month Comparison bar chart to present the expenses over the “do not spend more than” goal expectation for current and previous months.</span>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Transaction Details</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div class="card-content-img" (click)="enlarge('../../../assets/design/transaction_details-pdf.jpg')">
+                <ion-img [src]="'../../../assets/design/transaction_details-pdf.jpg'" [size]></ion-img>
+                <span>Tap to open</span>
+            </div>
+            <span>Transaction details view will contain a map on which users will be able to see where they made a selected transaction. It will also display some details about the transaction such as value registered, time and date, description and selected category of transaction.  There will be also ability to edit each transaction.</span>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Transaction History</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div class="card-content-img" (click)="enlarge('../../../assets/design/transaction_history-pdf.jpg')">
+                <ion-img [src]="'../../../assets/design/transaction_history-pdf.jpg'" [size]></ion-img>
+                <span>Tap to open</span>
+            </div>
+            <span>Transaction history – a simple filtered table where users will be able to search for transactions they made in the past. It will consist of simple data such as value and category.</span>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Articles</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div class="card-content-img" (click)="enlarge('../../../assets/design/articles-pdf.jpg')">
+                <ion-img [src]="'../../../assets/design/articles-pdf.jpg'" [size]></ion-img>
+                <span>Tap to open</span>
+            </div>
+            <span>Articles section will consist of live thread financial news and articles for users to read. This section is designed for users who are more caring about the financial world. It may also persuade other users to start gaining interest about it.</span>
+        </ion-card-content>
+    </ion-card>
+    
 </ion-content>

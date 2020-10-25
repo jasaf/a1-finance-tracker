@@ -9,12 +9,10 @@ import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 export class DesignComponent implements OnInit {
 
     constructor(private photoViewer: PhotoViewer) { }
-    // constructor() { }
 
     ngOnInit() { }
 
-    enlarge() {
-        this.photoViewer.show('https://tinyurl.com/yxd3wgkk');
+    enlarge(asset: string): void {
+        this.photoViewer.show(asset);
     }
-
 }

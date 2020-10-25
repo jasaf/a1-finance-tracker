@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
         },
         {
             title: 'App Critique',
-            url: '/main/critique',
+            url: '/main/Critique',
             icon: 'flame'
         },
         {
