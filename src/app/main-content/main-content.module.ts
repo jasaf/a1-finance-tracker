@@ -10,6 +10,7 @@ import { GoalComponent } from './goal/goal.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonasComponent } from './personas/personas.component';
 import { DesignComponent } from './design/design.component';
+import { CritiqueComponent } from './critique/critique.component';
 
 @NgModule({
     imports: [
@@ -22,7 +23,8 @@ import { DesignComponent } from './design/design.component';
         HeaderComponent,
         GoalComponent,
         PersonasComponent,
-        DesignComponent
+        DesignComponent,
+        CritiqueComponent
     ]
 })
 export class MainContentModule { }

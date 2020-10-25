@@ -1,3 +1,42 @@
-<p>
-  critique works!
-</p>
+<app-header [title]="'App Critique'"></app-header>
+<ion-content [fullscreen]="true">
+    <ion-card> 
+        <ion-card-header>
+            <ion-card-title>Similar application critique</ion-card-title>
+            <ion-card-subtitle class="italic">App Name: How much can I spend? Expense Tracker</ion-card-subtitle> 
+        </ion-card-header>
+        <ion-card-content>
+            <div>
+                <div class="card-content-img" (click)="enlarge('../../../assets/critique/main.png')">
+                    <ion-img [src]="'../../../assets/critique/main.png'" [size]></ion-img>
+                    <span>Tap to open</span>
+                </div>
+                <span>Starting with the main screen after launching the application – it displays a daily limit of money the user can spend. The limit is a total of value inserted to each wallet registered in the “Wallets” section. The question arises, what if we do not want to put all values from every wallet into our daily limit? Unfortunately, in this application we do not have an option to change that. Similar applies to balance and savings section on the same screen. Scrolling further, we can notice a statistics chart which again displays savings and limit of all previously set wallets.</span>
+            </div>
+            <div class="mt-2">
+                <div class="card-content-img" (click)="enlarge('../../../assets/critique/wallets.png')">
+                    <ion-img [src]="'../../../assets/critique/wallets.png'" [size]></ion-img>
+                    <span>Tap to open</span>
+                </div>
+                <span>Wallets section is where users can add different sources of assets. It displays both, current state of a wallet and savings already registered on given wallet. In this section we can also access each “wallet” and change its state, in order to register a new expense which is another disadvantage of this application.</span>
+            </div>
+            <div class="mt-2">
+                <div class="card-content-img" (click)="enlarge('../../../assets/critique/card.png')">
+                    <ion-img [src]="'../../../assets/critique/card.png'" [size]></ion-img>
+                    <span>Tap to open</span>
+                </div>
+                <span>Wallet view consists of simple text box fileds with ability to change its balance and savings. There are also individual statistics for selected wallet. Changing the balance of a wallet does not create a new expense record, instead the app provides statistics for each day the balance was changed, meaning that all expenses for a specific day are summed up which seems to be too vague.</span>
+            </div>
+            <div class="mt-2">
+                <div class="card-content-img" (click)="enlarge('../../../assets/critique/stats.png')">
+                    <ion-img [src]="'../../../assets/critique/stats.png'" [size]></ion-img>
+                    <span>Tap to open</span>
+                </div>
+                <span>Statistics section is just a table showing how the balance changed over the time. Expenses do not contain any description or category; they are summed up for each day which does not seem to be too accurate for more most demanding users.</span>
+            </div>
+            <div class="mt-2">
+                <p>Overall, the application seems to be very basic in terms of functionality. Users who launch this app for the first time can be confused about its purpose. There is not a fast way of adding an expense, instead users must check their bank account at the end of each day for the balance which next they must register with the app in order for it to register the expense for that specific date. A major disadvantage of this application is that we cannot add individual transfers with a click of a button. Consequently, we cannot view transaction history.</p>
+            </div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

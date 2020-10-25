@@ -37,13 +37,21 @@
       margin-top: 1rem;
   }
 
+  .mt-2 {
+      margin-top: 2rem;
+  }
+
+  .mb-1 {
+      margin-bottom: 1rem;
+  }
+
   .card-content-img {
     position: relative;
-    float: left;
     height: 10rem;
     width: 10rem;
     display: inline-block;
     overflow: hidden;
+    float: left;
    
     ion-img {
         position: absolute;
