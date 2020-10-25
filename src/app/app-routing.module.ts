@@ -10,7 +10,11 @@ const routes: Routes = [
     {
         path: 'main',
         loadChildren: () => import('./main-content/main-content.module').then( m => m.MainContentModule)
-    }
+    },
+  {
+    path: 'image-modal',
+    loadChildren: () => import('./image-modal/image-modal.module').then( m => m.ImageModalPageModule)
+  }
 ];
 
 @NgModule({

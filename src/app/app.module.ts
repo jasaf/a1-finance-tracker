@@ -10,8 +10,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainContentComponent } from './main-content/main-content.component';
 import { MainContentModule } from './main-content/main-content.module';
-import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
+import { File } from '@ionic-native/file/ngx/';
+import { ImageModalPageModule } from './image-modal/image-modal.module';
 
 @NgModule({
     declarations: [
@@ -23,13 +24,14 @@ import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
         BrowserModule,
         IonicModule.forRoot(),
         AppRoutingModule,
-        MainContentModule
+        MainContentModule,
+        ImageModalPageModule
     ],
     providers: [
         StatusBar,
         SplashScreen,
-        PhotoViewer,
         DocumentViewer,
+        File,
         { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
     ],
     bootstrap: [AppComponent]

@@ -13,7 +13,12 @@ export class AppComponent implements OnInit {
     selectedIndex = 0;
     appPages = [
         {
-            title: 'Goal',
+            title: 'Introduction',
+            url: '/main/Introduction',
+            icon: 'document'
+        },
+        {
+            title: 'Goals',
             url: '/main/Goals',
             icon: 'star'
         },

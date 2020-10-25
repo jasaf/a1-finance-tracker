@@ -19,6 +19,6 @@ export class IntroductionComponent implements OnInit {
     ngOnInit() { }
 
     commitLog() {
-        this.document.viewDocument('../../../assets/commit-log.pdf', 'application/pdf', this.options);
+        this.document.viewDocument('assets/commit-log.pdf', 'application/pdf', this.options);
     }
 }

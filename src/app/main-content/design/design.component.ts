@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
+import { ModalController } from '@ionic/angular';
+import { ImageModalPage } from 'src/app/image-modal/image-modal.page';
+
 
 @Component({
     selector: 'app-design',
@@ -8,11 +10,16 @@ import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 })
 export class DesignComponent implements OnInit {
 
-    constructor(private photoViewer: PhotoViewer) { }
+    constructor(private modalController: ModalController) { }
 
     ngOnInit() { }
 
-    enlarge(asset: string): void {
-        this.photoViewer.show(asset);
+    openPreview(img): void {
+        this.modalController.create({
+            component: ImageModalPage,
+            componentProps: {
+               img: img 
+            }
+        }).then(modal => modal.present());
     }
 }
