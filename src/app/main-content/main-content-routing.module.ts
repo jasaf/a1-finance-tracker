@@ -5,12 +5,17 @@ import { PersonasComponent } from './personas/personas.component';
 import { DesignComponent } from './design/design.component';
 import { CritiqueComponent } from './critique/critique.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'Goals',
+        redirectTo: 'Introduction',
         pathMatch: 'full'
+    },
+    {
+        path: 'Introduction',
+        component: IntroductionComponent
     },
     {
         path: 'Goals',

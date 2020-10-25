@@ -12,6 +12,7 @@ import { PersonasComponent } from './personas/personas.component';
 import { DesignComponent } from './design/design.component';
 import { CritiqueComponent } from './critique/critique.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { TechnologiesComponent } from './technologies/technologies.component';
         PersonasComponent,
         DesignComponent,
         CritiqueComponent,
-        TechnologiesComponent
+        TechnologiesComponent,
+        IntroductionComponent
     ]
 })
 export class MainContentModule { }
